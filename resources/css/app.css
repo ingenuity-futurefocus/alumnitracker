@@ -1,0 +1,70 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+html {font-family: sans-serif}
+* {margin: 0 auto; padding: 0; box-sizing: border-box; color: #555}
+a {display: inline-block; text-decoration: none; color: #000}
+
+input[type="text"] {padding: 8px 24px; border-radius: 32px; border: 1px solid #555; display: block; width: 100%;}
+
+main {display: flex; height: 100vh;}
+
+aside { width: 25%; background: #eee; padding: 32px;}
+aside ul {padding: 64px 0 0; list-style-type: none;}
+aside ul li {padding: 8px 0}
+
+section {flex: 1; padding: 32px}
+section form {padding: 32px 0;}
+
+.container {max-width: 960px;}
+
+.inline {display: block; font-size: 0; padding: 100px 0 0}
+.inline > * {font-size: initial; display: inline-block;}
+.inline.gutters > * {padding: 16px 32px;}
+.third {width: 33.333%}
+
+.shadowtile {display: block; padding: 32px; border-radius: 8px; box-shadow: 8px 8px 8px rgba(0,0,0,.2); text-align: center; font-size: 24px}
+.shadowtile figure {height: 100px; width: 100px; background-color: #555; margin-bottom: 16px}
+
+.cardWrap .card {border: 1px solid #555; border-bottom: 0; padding: 16px; display: block}
+.cardWrap .card strong {display: block; padding: 16px}
+.cardWrap {border-bottom: 1px solid #555; /*margin-top: 100px;*/ max-width: 350px;}
+
+.allTags {border: 1px solid #555; border-radius: 8px; padding: 8px; margin-top: 32px;}
+.allTags span {font-size: 12px; color: #555; border: 1px solid #555; border-radius: 20px; padding: 6px; margin: 4px 2px; display: inline-block;}
+.allTags span a {font-weight: bold;}
+
+.form-group {text-align: left;}
+.form-group label {font-weight: 700; color: #555}
+.form-group select,
+.form-group input[type="date"],
+.form-group input[type="text"] {border: 2px solid #555; border-radius: 4px; display: block; width: 100%;}
+
+.form-table {display: table; table-layout: fixed; width: 100%;}
+.form-table > * {display: table-cell; vertical-align: middle;}
+.form-table label {width: 90px; font-weight: bold; text-align: left}
+.form-table select,
+.form-table input[type="date"],
+.form-table input[type="text"] {border: 2px solid #555; border-radius: 4px; padding: 0 4px; width: 100%;}
+.form-table > span {padding-left: 16px;}
+
+.isl-button {background-color: #555; color: #fff; font-weight: bold; padding: 8px 24px; border-radius: 32px; min-width: 200px}
+.isl-button.inactive {opacity: .5;}
+.isl-button:hover {opacity: .75}
+
+.contact {max-width: 300px;}
+.contact a {color: blue;}
+.contact p span {float: right;}
+
+.slim-button {background-color: #555; color: #fff; padding: 2px 8px; border-radius: 4px;}
+
+.form-radio {display: table; table-layout: fixed; width: 100%;}
+.form-radio > * {display: table-cell; vertical-align: middle;}
+.form-radio label {width: 90px; font-weight: bold; text-align: left}
+.form-radio input {position: relative; top: -2px}
+.form-radio span {padding-right: 8px;}
+
+.checkinTags {border: 1px solid #555; border-radius: 10px; padding: 5px}
+.checkinTags span {padding: 2px 5px; display: inline-block}

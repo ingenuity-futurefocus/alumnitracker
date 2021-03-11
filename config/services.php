@@ -29,11 +29,11 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-    // Edyl Added Code for Oauth
+    //  Added Code for Oauth
     'google' => [
-        'client_id' => '213550258754-gu45q0io514tp7hgttds385dmvq29mb7.apps.googleusercontent.com',
-        'client_secret' => '5SGoBHl4-u5CXCLCwGk2GHMq',
-        'redirect' => 'http://127.0.0.1:80/auth/google/callback',
+        'client_id' => '213477274764914-pi0s2lcdpv9flevqbe9t5ofbjsummcd4.apps.googleusercontent.com',
+        'client_secret' => 'uJY_j4-KD-BSgjIx1DhXEBJN',
+        'redirect' => 'https://alumnitracker-8ci6a.ondigitalocean.app/auth/google/callback',
     ],
-    // End Edyl Added Code
+    // End  Added Code
 ];

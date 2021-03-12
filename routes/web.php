@@ -1,5 +1,9 @@
 <?php
 
+header('Access-Control-Allow-Origin:  *');
+header('Access-Control-Allow-Methods:  POST, GET, OPTIONS, PUT, DELETE');
+header('Access-Control-Allow-Headers:  Content-Type, X-Auth-Token, Origin, Authorization');
+
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AlumnusController;
@@ -21,14 +25,10 @@ use App\Http\Controllers\TagController;
 
 // Route::get('/laravel', function () { return view('welcome'); });
 
-// Edyl Added Code for oAuth
-// Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
-// Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
-
+// Added Code for oAuth
 Route::get('auth/google','App\Http\Controllers\GoogleController@redirectToGoogle');
 Route::get('auth/google/callback', 'App\Http\Controllers\GoogleController@handleGoogleCallback');
 
-// End Edyl Added Code 
 
 /**
  * Dashboard Routes
